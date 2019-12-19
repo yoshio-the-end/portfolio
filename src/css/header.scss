@@ -1,0 +1,54 @@
+.header__wrapper{
+  color:$link;
+}
+
+.header{
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  &__title{
+    font-size: 20px;
+  }
+  &__nav{
+    display: flex;
+    flex-direction: column;
+    &__list{
+      margin-top: 30px;
+      &:first-child{
+        margin: 0;
+      }
+    }
+    &__button {
+      position: relative;
+      display: inline-block;
+      width: 100%;
+      padding: .4em 0 .4em 2em;
+      color: $link;
+      text-align: right;
+      text-decoration: none;
+      outline: none;
+      transition: all .3s;
+      &:hover {
+        color: $link_hover;
+      }
+      &hover:after,
+      &:hover:before {
+        transform: scale(1);
+      }
+    }
+    &__button::before,
+    &__button::after {
+      position: absolute;
+      right: -2px;
+      bottom: -2px;
+      left: -2px;
+      z-index: 2;
+      content: '';
+      transition: all .3s;
+    }
+    &__button:before {
+      border-bottom: 1px solid $link_hover;
+      transform: scale(0, 1);
+    }
+  }
+}

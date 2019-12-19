@@ -1,0 +1,10 @@
+$link: #666 !default;
+$link_hover: darken($link,80%);
+
+@mixin link_hover{
+  color: $link_hover;
+  border-bottom: $link_hover 5px solid;
+} ;
+
+@import "./index.scss";
+@import "./header.scss";
