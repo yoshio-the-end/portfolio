@@ -6,5 +6,39 @@ $link_hover: darken($link,80%);
   border-bottom: $link_hover 5px solid;
 } ;
 
+@mixin button {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  padding: .4em 0 .4em 2em;
+  color: $link;
+  text-align: right;
+  text-decoration: none;
+  outline: none;
+  transition: all .3s;
+  &:hover {
+    color: $link_hover;
+  }
+  &hover:after,
+  &:hover:before {
+    transform: scale(1);
+  }
+  &:before,
+  &:after {
+    position: absolute;
+    right: -2px;
+    bottom: -2px;
+    left: -2px;
+    z-index: 2;
+    content: '';
+    transition: all .3s;
+  }
+  &:before {
+    border-bottom: 1px solid $link_hover;
+    transform: scale(0, 1);
+  }
+  
+}
+
 @import "./index.scss";
 @import "./header.scss";
