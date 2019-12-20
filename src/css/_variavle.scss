@@ -1,3 +1,4 @@
+$text: #444;
 $link: #666 !default;
 $link_hover: darken($link,80%);
 
@@ -37,7 +38,15 @@ $link_hover: darken($link,80%);
     border-bottom: 1px solid $link_hover;
     transform: scale(0, 1);
   }
-  
+}
+
+@mixin section {
+  height: 100vh;
+  margin: 0 auto;
+  color: $text;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @import "./index.scss";

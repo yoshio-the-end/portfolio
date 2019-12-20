@@ -10,7 +10,7 @@ export default class Header extends React.Component {
     let navList = [
       <ul className="header__nav">
         <li className="header__nav__list">
-          <a href="#" className="header__nav__button">プロフィール</a>
+          <a href="#section02" className="header__nav__button">プロフィール</a>
         </li>
         <li className="header__nav__list">
           <a href="#" className="header__nav__button">作品</a>
