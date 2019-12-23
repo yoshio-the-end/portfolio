@@ -10,7 +10,7 @@ export default class Section02 extends React.Component {
     const html = {title:"html",par:"80%"};
     const css = {title:"css",par:"70%"};
     const js = {title:"javascript",par:"40%"};
-    const rb = {title:"ruby",par:"40%"};
+    const rb = {title:"ruby",par:"60%"};
 
     return (
       <div id="section02" className="section02">

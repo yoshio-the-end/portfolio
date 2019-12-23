@@ -7,6 +7,7 @@ export default class Header extends React.Component {
     super(props);
   }
   render() {
+
     let navList = [
       <ul className="header__nav">
         <li className="header__nav__list">

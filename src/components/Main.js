@@ -9,6 +9,7 @@ export default class Main extends React.Component {
     super(props);
   }
   render() {
+    
     return (
       <div className="main-container">
         <Section01 />
