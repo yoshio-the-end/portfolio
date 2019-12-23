@@ -8,7 +8,7 @@ export default class Section01 extends React.Component {
   }
   render() {
     return (
-      <div className="section01">
+      <div id="top" className="section01">
         <div className="main__article">
           <img src={MainImg} alt="main" className="main__article__img" />
           <div className="main__article__container">

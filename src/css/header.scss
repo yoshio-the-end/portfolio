@@ -28,6 +28,7 @@
     }
     &__button {
       @include button;
+      cursor: pointer;
     }
   }
   .logo__box{
@@ -40,4 +41,9 @@
     transform: rotate(-25deg);
     z-index: -90;
   }
+}
+
+.header__nav__list > .active {
+  color: $link_hover;
+  font-weight: bold;
 }

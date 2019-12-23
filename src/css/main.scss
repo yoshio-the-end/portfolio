@@ -30,8 +30,6 @@
 
 .section02{
   @include section;
-  background-color: $text;
-  color: #fafafa;
   font-weight: 100;
   .main__article{
     display: flex;
@@ -119,3 +117,22 @@
     width: 0;
   }
 }
+
+.skills.delighter {
+  transition: all .5s ease-out;
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+/* the .started class is set when the top
+  of [data-delighter] is at 0.75 of the viewport 
+  (where 0 is top and 1 is bottom) */
+
+.skills.delighter.started {
+  transform: none;
+  opacity: 1;
+}
+
+/* an extra .ended state is set when the bottom 
+  of [data-delighter] is at 0.75 of the viewport
+  (where 0 is top and 1 is bottom) */

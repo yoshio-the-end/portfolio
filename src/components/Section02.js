@@ -1,6 +1,7 @@
 import React from 'react';
 import '../App.scss';
 import Skills from './Skills';
+import { delighter } from '../delighters.js'
 
 export default class Section02 extends React.Component {
   constructor(props) {
