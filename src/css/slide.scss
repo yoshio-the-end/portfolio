@@ -1,0 +1,36 @@
+.slick-slide{
+  opacity: 0.7;
+  &:hover{
+    opacity: 1;
+  }
+}
+
+.slick-track{
+  width: calc(100vw - 80px);
+}
+
+.slider{
+  padding-top: 30px;
+  width: calc(100vw - 80px);
+  margin: 0 auto;
+}
+
+.slide__box{
+  background-color: #fff;
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  &__img{
+    background-color: red;
+    height: 75%;
+    width: 100%;
+  }
+  &__title{
+    padding-top: 5px;
+    font-size: 14px;
+  }
+  &__text{
+    font-size: 12px;
+    padding-top: 5px;
+  }
+}

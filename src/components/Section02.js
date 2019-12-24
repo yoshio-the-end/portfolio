@@ -9,10 +9,10 @@ export default class Section02 extends React.Component {
     super(props);
   }
   render() {
-    const html = {title:"html",par:"80%"};
-    const css = {title:"css",par:"70%"};
-    const js = {title:"javascript",par:"40%"};
-    const rb = {title:"ruby",par:"60%"};
+    const html = {title:"html",par:"90%"};
+    const css = {title:"css",par:"65%"};
+    const js = {title:"javascript",par:"50%"};
+    const rb = {title:"ruby",par:"50%"};
     const ai = {title:"illustrator",par:"50%"};
     const ps = {title:"photoshop",par:"70%"};
 
