@@ -1,0 +1,45 @@
+.downarrow{
+  position: fixed;
+  z-index: 99;
+  top: calc(100vh - 80px);
+  right: 40px;
+  font-size: 50px;
+  color: $link;
+  animation: bouncedown 1s ease-in infinite;
+  cursor: pointer;
+}
+
+.uparrow{
+  position: fixed;
+  z-index: 99;
+  top: calc(100vh - 80px);
+  left: 40px;
+  font-size: 50px;
+  color: $link;
+  animation: bounceup 1s ease-in infinite;
+  cursor: pointer;
+}
+
+@keyframes bounceup{
+  0% {
+    top: calc(100vh - 110px);
+  }
+  10% {
+    top: calc(100vh - 80px);
+  }
+  100%{
+    top: calc(100vh - 110px);
+  }
+}
+
+@keyframes bouncedown{
+  0% {
+    top: calc(100vh - 110px);
+  }
+  90% {
+    top: calc(100vh - 80px);
+  }
+  100%{
+    top: calc(100vh - 110px);
+  }
+}
