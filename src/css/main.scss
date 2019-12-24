@@ -36,14 +36,14 @@
     z-index: -1;
     content: '';
     position: absolute;
-    top: 100%;
+    top: 90%;
     right: 0;
     bottom: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background-color: #f0f0f0;
-    transform: skewY(-5deg);
+    transform: skewY(-10deg);
   }
   &__textbox{
     font-size: 13px;
@@ -179,14 +179,14 @@
     z-index: 1;
     content: '';
     position: absolute;
-    top: 200%;
+    top: 190%;
     right: 0;
     bottom: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background-color: #ffee6b;
-    transform: skewY(-5deg);
+    transform: skewY(-10deg);
   }
   .main__article{
     z-index: 2;
