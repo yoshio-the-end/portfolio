@@ -1,5 +1,6 @@
 
 .header{
+  z-index: 99;
   height: 182px;
   width: 100%;
   padding: 40px 40px 0px;
@@ -38,7 +39,7 @@
     left: -150px;
     height: 200px;
     width: 500px;
-    transform: rotate(-25deg);
+    transform: rotate(-45deg);
     z-index: -90;
   }
 }

@@ -16,6 +16,18 @@ export default class Header extends React.Component {
             activeClass="active"
             className="header__nav__button"
             activeClass="active"
+            to="top"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={300}
+          >Top</Link>
+        </li>
+        <li className="header__nav__list">
+          <Link
+            activeClass="active"
+            className="header__nav__button"
+            activeClass="active"
             to="section02"
             spy={true}
             smooth={true}
@@ -24,10 +36,28 @@ export default class Header extends React.Component {
           >Profile</Link>
         </li>
         <li className="header__nav__list">
-          <a href="#" className="header__nav__button">作品</a>
+          <Link
+            activeClass="active"
+            className="header__nav__button"
+            activeClass="active"
+            to="section03"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={300}
+          >Product</Link>
         </li>
         <li className="header__nav__list">
-          <a href="#" className="header__nav__button">コンタクト</a>
+          <Link
+            activeClass="active"
+            className="header__nav__button"
+            activeClass="active"
+            to="section04"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={300}
+          >Contact</Link>
         </li>
       </ul>
     ];

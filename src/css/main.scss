@@ -31,6 +31,27 @@
 .section02{
   @include section;
   font-weight: 100;
+  padding-bottom: 30px;
+  &:before{
+    z-index: -1;
+    content: '';
+    position: absolute;
+    top: 100%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f0f0f0;
+    transform: skewY(-5deg);
+  }
+  &__textbox{
+    font-size: 13px;
+    text-align: left;
+    &__text{
+      padding-top: 5px;
+    }
+  }
   .main__article{
     display: flex;
     justify-content: center;
@@ -38,6 +59,7 @@
       text-align: left;
     }
     &__title{
+      text-align: left;
       font-weight: 200;
     }
     .skills{
@@ -61,17 +83,23 @@
         background: rgba(255,255,255,.1);
         z-index: 10;
       }
-      &:nth-child(2) .percent .progress{
-        background: linear-gradient(45deg, #ffdbd1, #ff0000);
-      }
       &:nth-child(3) .percent .progress{
-        background: linear-gradient(45deg, #faff61, #ff8e14);
+        background: linear-gradient(45deg, #1fe6ff, #673Ab7);
       }
       &:nth-child(4) .percent .progress{
-        background: linear-gradient(45deg, #80ff84, #4fc9d6);
+        background: linear-gradient(45deg, #ffdbd1, #ff0000);
       }
       &:nth-child(5) .percent .progress{
-        background: linear-gradient(45deg, #1fe6ff, #673Ab7);
+        background: linear-gradient(45deg, #faff61, #ff8e14);
+      }
+      &:nth-child(6) .percent .progress{
+        background: linear-gradient(45deg, #80ff84, #4fc9d6);
+      }
+      &:nth-child(7) .percent .progress{
+        background: linear-gradient(45deg, #ffc6e4, rgb(211, 252, 4));
+      }
+      &:nth-child(8) .percent .progress{
+        background: linear-gradient(45deg, #b3b5f2, rgb(4, 9, 155));
       }
       .Name{
         position: relative;
@@ -130,9 +158,37 @@
 
 .skills.delighter.started {
   transform: none;
-  opacity: 1;
+  opacity: 0;
 }
 
+.skills.delighter.ended {
+  transform: none;
+  opacity: 1;
+}
 /* an extra .ended state is set when the bottom 
   of [data-delighter] is at 0.75 of the viewport
   (where 0 is top and 1 is bottom) */
+
+
+.section03{
+  @include section;
+  background-color: #f0f0f0;
+  &:before{
+    z-index: 1;
+    content: '';
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffee6b;
+    transform: skewY(-5deg);
+  }
+}
+
+.section04{
+  @include section;
+  background-color: #f0f0f0;
+}
