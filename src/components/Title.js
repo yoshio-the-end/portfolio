@@ -2,6 +2,7 @@ import React from 'react';
 import '../App.scss';
 import { animateScroll as scroll } from 'react-scroll';
 import { Link } from 'react-scroll'
+import logo from '../img/logo.svg'
 
 export default class Title extends React.Component {
   constructor(props) {
@@ -22,7 +23,7 @@ export default class Title extends React.Component {
         smooth={true}
         offset={0}
         duration={300}
-      >S.yoshikawa</Link>
+      ><img src={logo} />portfolio</Link>
     )
   }
 }

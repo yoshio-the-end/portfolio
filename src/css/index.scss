@@ -10,9 +10,9 @@ body {
   max-width: 100vw;
   font-family: "Exo", sans-serif;
   color: #fff;
-  background: linear-gradient(-25deg, #fcfcfc, #c8c8c8, #fafafa, #fff6f0);
+  background: linear-gradient(-25deg, rgb(199, 189, 189), #dbf1fd, #ffffe2, #fbece1);
   background-size: 400% 400%;
-  animation: gradientBG 8s ease infinite;
+  animation: gradientBG 5s ease infinite;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
