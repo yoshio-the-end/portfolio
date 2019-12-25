@@ -17,7 +17,7 @@ export default class Arrow extends React.Component {
           smooth={true}
           offset={0}
           duration={500}
-        ><i class="fas fa-angle-double-down" /></Link>
+        ><i className="fas fa-angle-double-down" /></Link>
         <Link
           activeClass="active"
           className="uparrow"
@@ -26,7 +26,7 @@ export default class Arrow extends React.Component {
           smooth={true}
           offset={0}
           duration={500}
-        ><i class="fas fa-angle-double-up" /></Link>
+        ><i className="fas fa-angle-double-up" /></Link>
       </div>
     )
   }

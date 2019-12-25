@@ -5,6 +5,10 @@ import portfolio from "../img/portfolio.png"
 import fmarket from "../img/fmarket.png"
 import tellers from "../img/tellers.png"
 import danc from "../img/danc.png"
+import ModalWindow00 from "./ModalWindow00";
+import ModalWindow01 from "./ModalWindow01";
+import ModalWindow02 from "./ModalWindow02";
+import ModalWindow03 from "./ModalWindow03";
 
 export default class SimpleSlider extends Component {
   constructor(props) {
@@ -33,10 +37,10 @@ export default class SimpleSlider extends Component {
     return (
       <div className="slider">
         <Slider {...settings}>
-          <SlideBox name={"some string"} img={slide00.img} title={slide00.title} dir1={slide00.direction01} dir2={slide00.direction02}/>
-          <SlideBox name={"some string"} img={slide01.img} title={slide01.title} dir1={slide01.direction01} dir2={slide01.direction02} />
-          <SlideBox name={"some string"} img={slide02.img} title={slide02.title} dir1={slide02.direction01} dir2={slide02.direction02} />
-          <SlideBox name={"some string"} img={slide03.img} title={slide03.title} dir1={slide03.direction01} dir2={slide03.direction02} />
+          <ModalWindow00 />
+          <ModalWindow01 />
+          <ModalWindow02 />
+          <ModalWindow03 />
         </Slider>
       </div>
     );

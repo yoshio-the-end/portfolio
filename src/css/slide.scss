@@ -1,4 +1,5 @@
 .slick-slide{
+  z-index: 0;
   opacity: 0.5;
   -ms-filter: blur(3px);
   filter: blur(3px);
@@ -24,10 +25,12 @@
 }
 
 .slide__box{
+  z-index: 0;
   background-color: #fff;
   height: 320px;
   display: flex;
   flex-direction: column;
+  cursor: pointer;
   &__img{
     background-color: red;
     height: 75%;
