@@ -31,7 +31,7 @@ const customStyles = {
 };
 const slide01 = { img: tellers, title: "TELLERS", direction01: "個人開発1つ目", direction02: "HTML,scss,Ruby,Rails,jQuery" };
 
-Modal.setAppElement('#modal') //任意のアプリを設定する　create-react-appなら#root
+Modal.setAppElement('#modal')
 class ModalWindow01 extends React.Component {
   constructor() {
     super();
@@ -66,7 +66,7 @@ class ModalWindow01 extends React.Component {
           contentLabel="Example Modal"
         >
           <div className="modal-container">
-            <h2 ref={subtitle => this.subtitle = subtitle}>TELLERS</h2>
+            <h2 ref={subtitle => this.subtitle = subtitle}>{slide01.title}</h2>
             <div className="modal-container__article">
               <a className="modal-container__article__link" href="http://yahoo.co.jp"><img src={tellers} className="modal-container__article__img" /></a>
               <div className="modal-container__article__textbox">
@@ -82,7 +82,19 @@ class ModalWindow01 extends React.Component {
                   アプリケーションを作り上げる流れが把握できました。
                 </p>
                 <span>実装機能</span>
-                <p>追加gem:devise,jquery-rails</p>
+                <p>追加パッケージ:devise,jquery-rails</p>
+                <ul>
+                  <li>ユーザー登録</li>
+                  <li>ログイン/ログアウト</li>
+                  <li>新規投稿</li>
+                  <li>投稿編集/削除</li>
+                  <li>カテゴリ登録</li>
+                  <li>カテゴリ検索</li>
+                </ul>
+                <span>気をつけたこと</span>
+                <p>オカルト情報サイトですが、あまりおどろおどろしい雰囲気になっても一部のオカルト好きのファン以外はなかなか読んでくれないと思い
+                  基本的にはライトな配色と配置で構成しました。
+                </p>
               </div>
             </div>
           </div>
