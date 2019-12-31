@@ -1,3 +1,4 @@
+@media screen and (max-width: 560px) {
 .slick-slide{
   z-index: 0;
   opacity: 0.5;
@@ -20,14 +21,14 @@
 
 .slider{
   padding-top: 30px;
-  width: calc(100vw - 280px);
+  width: calc(100vw);
   margin: 0 auto;
 }
 
 .slide__box{
   z-index: 0;
   background-color: #fff;
-  height: 320px;
+  height: 280px;
   display: flex;
   flex-direction: column;
   cursor: pointer;
@@ -38,10 +39,61 @@
   }
   &__title{
     padding-top: 5px;
-    font-size: 14px;
+    font-size: 5px;
   }
   &__text{
-    font-size: 12px;
+    font-size: 3px;
     padding-top: 5px;
   }
 }
+}
+
+@media screen and (min-width: 561px) {
+  .slick-slide{
+    z-index: 0;
+    opacity: 0.5;
+    -ms-filter: blur(3px);
+    filter: blur(3px);
+    &:hover{
+      opacity: 1;
+      transition: .3s;
+      -ms-filter: blur(0px);
+      filter: blur(0px);
+    }
+  }
+  
+  .slick-current{
+    opacity: 1;
+    -ms-filter: blur(0px);
+    filter: blur(0px);
+  }
+  
+  
+  .slider{
+    padding-top: 30px;
+    width: calc(100vw - 280px);
+    margin: 0 auto;
+  }
+  
+  .slide__box{
+    z-index: 0;
+    background-color: #fff;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    &__img{
+      background-color: red;
+      height: 75%;
+      width: 100%;
+    }
+    &__title{
+      padding-top: 5px;
+      font-size: 14px;
+    }
+    &__text{
+      font-size: 12px;
+      padding-top: 5px;
+    }
+  }
+  }

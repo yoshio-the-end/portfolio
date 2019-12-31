@@ -26,7 +26,15 @@ export default class SimpleSlider extends Component {
       speed: 500,
       dots: true,
       slidesToShow: 3,
-      slidesToScroll: 1
+      slidesToScroll: 1,
+      responsive: [
+        {
+        breakpoint: 561, //767px以下のサイズに適用
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+    ]
     };
     return (
       <div className="slider">

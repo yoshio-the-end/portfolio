@@ -1,50 +1,65 @@
-*{
+* {
   margin: 0;
   padding: 0;
   text-decoration: none;
   box-sizing: border-box;
 }
-
-body {
-  margin: 0;
-  max-width: 100vw;
-  font-family: "Exo", sans-serif;
-  color: #fff;
-  background: linear-gradient(-25deg, rgb(199, 189, 189), #dbf1fd, #ffffe2, #fbece1);
-  background-size: 400% 400%;
-  animation: gradientBG 5s ease infinite;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  &::-webkit-scrollbar {
-    display:none;
+@media screen and (max-width: 560px) {
+  body {
+    margin: 0;
+    width: 100%;
+    font-family: "Exo", sans-serif;
+    color: #fff;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+      "Droid Sans", "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    &::-webkit-scrollbar {
+      display: none;
+      box-sizing: border-box;
+    }
+  }
 }
+
+@media screen and (min-width: 561px) {
+  body {
+    margin: 0;
+    max-width: 100vw;
+    font-family: "Exo", sans-serif;
+    color: #fff;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+      "Droid Sans", "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
 }
 
 @keyframes gradientBG {
   0% {
-      background-position: 0% 50%;
+    background-position: 0% 50%;
   }
   50% {
-      background-position: 100% 50%;
+    background-position: 100% 50%;
   }
   100% {
-      background-position: 0% 50%;
+    background-position: 0% 50%;
   }
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
-.wrapper{
+.wrapper {
   min-height: 100vh;
+  margin: 0 auto;
 }
 
-li{
+li {
   list-style: none;
 }

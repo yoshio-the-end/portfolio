@@ -1,45 +1,93 @@
-
-.header{
-  z-index: 50;
-  height: 182px;
-  width: 100%;
-  padding: 40px 40px 0px;
-  font-size: 12px;
-  display: flex;
-  justify-content: space-between;
-  color: #fff;
-  position: fixed;
-  &__title{
-    position: fixed;
-    height: 48px;
-    width: 48px;
-    cursor: pointer;
-  }
-  &__nav{
-    margin: 0 0 0 auto;
+@media screen and (max-width: 560px) {
+  .header {
+    z-index: 50;
+    height: 182px;
+    width: 100%;
+    padding: 40px 40px 0px;
+    font-size: 10px;
     display: flex;
-    flex-direction: column;
-    color: $link;
-    &__list{
-      margin-top: 30px;
-      &:first-child{
-        margin: 0;
-      }
-    }
-    &__button {
-      @include button;
+    justify-content: space-between;
+    color: #fff;
+    position: fixed;
+    &__title {
+      position: fixed;
+      height: 40px;
+      width: 40px;
       cursor: pointer;
     }
+    &__nav {
+      margin: 14% 0 0 auto;
+      display: flex;
+      flex-direction: column;
+      color: $link;
+      &__list {
+        font-size: .8rem;
+        margin-top: 10%;
+        &:first-child {
+          margin: 0;
+        }
+      }
+      &__button {
+        @include button;
+        cursor: pointer;
+      }
+    }
+    .logo__box {
+      background-color: $text;
+      position: absolute;
+      top: -230%;
+      left: -100px;
+      height: 500px;
+      width: 1000px;
+      transform: rotate(-10deg);
+      z-index: -90;
+    }
   }
-  .logo__box{
-    background-color: $text;
-    position: absolute;
-    top:-230%;
-    left: -100px;
-    height: 500px;
-    width: 1000px;
-    transform: rotate(-10deg);
-    z-index: -90;
+}
+
+@media screen and (min-width: 561px) {
+  .header {
+    z-index: 50;
+    height: 182px;
+    width: 100%;
+    padding: 40px 40px 0px;
+    font-size: 10px;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    position: fixed;
+    &__title {
+      position: fixed;
+      height: 40px;
+      width: 40px;
+      cursor: pointer;
+    }
+    &__nav {
+      margin: 0 0 0 auto;
+      display: flex;
+      flex-direction: column;
+      color: $link;
+      &__list {
+        margin-top: 30px;
+        &:first-child {
+          margin: 0;
+        }
+      }
+      &__button {
+        @include button;
+        cursor: pointer;
+      }
+    }
+    .logo__box {
+      background-color: $text;
+      position: absolute;
+      top: -230%;
+      left: -100px;
+      height: 500px;
+      width: 1000px;
+      transform: rotate(-10deg);
+      z-index: -90;
+    }
   }
 }
 

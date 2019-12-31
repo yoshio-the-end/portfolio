@@ -1,3 +1,4 @@
+@media screen and (max-width: 560px) {
 .modal-container{
   height: 100%;
   width: 100%;
@@ -8,8 +9,9 @@
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
     &__link{
-      width: 50%;
+      width: 100%;
       &:hover{
         opacity: 0.5;
         transition: 0.3s;
@@ -17,9 +19,10 @@
     }
     &__textbox{
       line-height: 24px;
-      width: 45%;
+      width: 100%;
       text-align: left;
-      font-size: 14px;
+      font-size: 12px;
+      margin: 10px 0;
       &__title{
         font-size: 18px;
         font-weight: bold;
@@ -36,3 +39,46 @@
     }
   }
 }
+}
+
+@media screen and (min-width: 561px) {
+  .modal-container{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    color: $text;
+    &__article{
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      &__link{
+        width: 50%;
+        &:hover{
+          opacity: 0.5;
+          transition: 0.3s;
+        }
+      }
+      &__textbox{
+        line-height: 24px;
+        width: 45%;
+        text-align: left;
+        font-size: 14px;
+        margin: 10px 0;
+        &__title{
+          font-size: 18px;
+          font-weight: bold;
+          margin-bottom: 20px;
+        }
+        span{
+          font-weight: bold;
+          font-size: 16px;
+        }
+      }
+      &__img{
+        border: 1px solid $text;
+        width: 100%;
+      }
+    }
+  }
+  }
