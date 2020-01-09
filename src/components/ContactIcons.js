@@ -10,6 +10,7 @@ export default class ContactIcons extends React.Component {
       <div class="main__article__icons">
         <a href="https://twitter.com/ZN59FOGeBBTQ0et" className="main__article__icons__icon"><i class="fab fa-twitter-square"></i></a>
         <a href="https://www.instagram.com/xamhos/?hl=ja" className="main__article__icons__icon"><i class="fab fa-instagram"></i></a>
+        <a href="https://github.com/yoshio-the-end" className="main__article__icons__icon"><i class="fab fa-github-square"></i></a>
       </div>
     )
   }

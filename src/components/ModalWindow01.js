@@ -68,7 +68,7 @@ class ModalWindow01 extends React.Component {
           <div className="modal-container">
             <h2 ref={subtitle => this.subtitle = subtitle}>{slide01.title}</h2>
             <div className="modal-container__article">
-              <a className="modal-container__article__link" href="http://yahoo.co.jp"><img src={tellers} className="modal-container__article__img" /></a>
+              <a className="modal-container__article__link" href="#"><img src={tellers} className="modal-container__article__img" /></a>
               <div className="modal-container__article__textbox">
                 <h3 className="modal-container__article__textbox__title">
                   個人開発アプリ1つ目【{slide01.title}】

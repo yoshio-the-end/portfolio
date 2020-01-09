@@ -1,7 +1,5 @@
 import React from 'react';
 import '../App.scss';
-import Skills from './Skills';
-import { delighter } from '../delighters.js'
 import SimpleSlider from './Slider';
 
 export default class Section03 extends React.Component {
