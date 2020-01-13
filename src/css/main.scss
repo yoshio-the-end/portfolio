@@ -16,9 +16,21 @@
         padding-left: 40px;
       }
       &__title {
+        display: none;
         font-size: 5rem;
         font-weight: 100;
         border-bottom: 1px solid $text;
+      }
+      .titleLogo{
+        width: 50vw;
+      }
+      .st0{
+        width: 100%;
+        stroke: #2c2c2c;
+        fill: #2c2c2c;
+        stroke-dasharray: 500;
+        opacity: 10;
+        animation: sen 2s cubic-bezier(.68,.08,.96,.5);
       }
       &__text {
         font-weight: 100;
@@ -28,6 +40,27 @@
         width: 15%;
       }
     }
+  }
+}
+
+@keyframes sen {
+  0%{
+    opacity: 0;
+    fill: none;
+    stroke-dashoffset: 500;
+  }
+  30%{
+    opacity: 10;
+    fill: none;
+    stroke-dashoffset: 500;
+  }
+  95%{
+    fill:rgba(44,44,44,.3);
+  }
+  100%{
+    opacity: 10;
+    fill:rgba(44, 44, 44,1);
+    stroke-dashoffset: 0;
   }
 }
 
