@@ -6,6 +6,7 @@ export default class Arrow extends React.Component {
   constructor(props) {
     super(props);
   }
+  
   render() {
     return (
       <div className="arrowBox">
@@ -21,6 +22,7 @@ export default class Arrow extends React.Component {
         <Link
           activeClass="active"
           className="uparrow"
+          id="upToTop"
           to="top"
           spy={true}
           smooth={true}

@@ -15,7 +15,7 @@ export default class Section01 extends React.Component {
           <div className="main__article__container">
             <h1 className="main__article__title">Shoma.Yoshikawa</h1>
             <TitleSvg />
-            <p className="main__article__text">I want to be a Front-end engineer</p>
+            <p className="main__article__text">More Design and More Production</p>
           </div>
         </div>
       </div>

@@ -26,13 +26,15 @@
         width: 100%;
         stroke: $text;
         fill: $text;
-        stroke-dasharray: 500;
+        stroke-dasharray: 520;
         opacity: 10;
-        animation: sen 2s cubic-bezier(.68,.08,.96,.5);
+        animation: sen 3s cubic-bezier(.68,.08,.96,.5);
       }
       &__text {
         font-weight: 100;
         padding-top: 10px;
+        opacity: 1;
+        animation: view 3.5s  linear ;
       }
       &__img {
         width: 15%;
@@ -40,20 +42,46 @@
     }
   }
 }
-
+@keyframes view{
+  0%{
+    opacity: 0;
+    top:50%;
+  }
+  95%{
+    opacity: 0;
+    top:0%;
+  }
+  100%{
+    opacity: 1;
+    top:0%;
+  }
+}
 @keyframes sen {
   0%{
     opacity: 0;
     fill: none;
-    stroke-dashoffset: 500;
+    stroke-dashoffset: 520;
   }
   30%{
     opacity: 10;
     fill: none;
-    stroke-dashoffset: 500;
+    stroke-dashoffset: 520;
+  }
+  80%{
+    fill:rgba(255, 255, 255, 0.4);
+    stroke-dashoffset: 0;
+  }
+  85%{
+    fill: rgba(203, 203, 203, 0.6);
+    stroke-dashoffset: 0;
+  }
+  90%{
+    fill: rgba(116, 116, 116, 0.6);
+    stroke-dashoffset: 0;
   }
   95%{
-    fill:rgba(44,44,44,.3);
+    fill: rgba(46, 46, 46, 0.8);
+    stroke-dashoffset: 0;
   }
   100%{
     opacity: 10;
