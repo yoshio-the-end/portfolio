@@ -17,17 +17,15 @@
       }
       &__title {
         display: none;
-        font-size: 5rem;
-        font-weight: 100;
-        border-bottom: 1px solid $text;
       }
       .titleLogo{
         width: 50vw;
+        border-bottom: 1px solid $text;
       }
       .st0{
         width: 100%;
-        stroke: #2c2c2c;
-        fill: #2c2c2c;
+        stroke: $text;
+        fill: $text;
         stroke-dasharray: 500;
         opacity: 10;
         animation: sen 2s cubic-bezier(.68,.08,.96,.5);
@@ -78,9 +76,19 @@
         padding-left: 40px;
       }
       &__title {
-        font-size: 2rem;
-        font-weight: 100;
+        display: none;
+      }
+      .titleLogo{
+        width: 50vw;
         border-bottom: 1px solid $text;
+      }
+      .st0{
+        width: 100%;
+        stroke: $text;
+        fill: $text;
+        stroke-dasharray: 500;
+        opacity: 10;
+        animation: sen 2s cubic-bezier(.68,.08,.96,.5);
       }
       &__text {
         font-size: 0.8rem;
